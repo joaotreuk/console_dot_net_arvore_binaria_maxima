@@ -26,6 +26,7 @@ namespace Tarefa2
             Console.WriteLine();
             arvore.PostorderTraversal();
 
+            // Exemplo usando uma árvore binária cujos valores maiores vão para a direita e os valores menores para a esquerda
             ArvoreBinaria raiz = new();
             raiz.Inserir(75);
             raiz.Inserir(57);

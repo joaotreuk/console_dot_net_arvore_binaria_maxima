@@ -1,23 +1,23 @@
 ﻿/// <summary>
 /// Binary Tree vs Binary Search Tree
 /// Typically don't use binary tree... instead we need to use a binary search tree in which
-/// Left node is less than parent  and right node is greater than its parent
+/// Left node is less than parent and right node is greater than its parent
 /// Binary Search Tree is a logical structure (abstract data type) - so it can be implemented in different ways
 /// Balanced vs unbalanced
-//like all right nodes instead of left and right nodes evenly distributed
-
-//height
-// 2^h-1 = n -> h = log(n+1) -> O logn)
-//      O     Level 0
-//     / \
-//    O   O   Level 1
-//   /\   /\
-//  O  O O  O Level 2
-//time complexity for delete and insert are also log n because essentially they are finding a node 
-//and then adding constant time to do the operation so we can forget about the added constant time
-
-//Data structures that use BinarySearchTree in their implementation are the C# sortedDictionary, Java Treemap and the C++ set class
-//Also the heep is an implementation of a Binary Search Tree
+/// like all right nodes instead of left and right nodes evenly distributed
+///
+/// height
+/// 2^h-1 = n -> h = log(n+1) -> O logn)
+///      O     Level 0
+///     / \
+///    O   O   Level 1
+///   /\   /\
+///  O  O O  O Level 2
+/// time complexity for delete and insert are also log n because essentially they are finding a node 
+/// and then adding constant time to do the operation so we can forget about the added constant time
+///
+/// Data structures that use BinarySearchTree in their implementation are the C# sortedDictionary, Java Treemap and the C++ set class
+/// Also the heep is an implementation of a Binary Search Tree
 /// </summary>
 namespace Tarefa2
 {
@@ -170,7 +170,7 @@ namespace Tarefa2
                     }
                 }
             }
-            else//Current Node has both a left and a right child
+            else // Current Node has both a left and a right child
             {
                 //When both child nodes exist we can go to the right node and then find the leaf node of the left child as this will be the least number
                 //that is greater than the current node. It may have right child, so the right child would become..left child of the parent of this leaf aka successer node
@@ -221,7 +221,7 @@ namespace Tarefa2
         }
 
         // Mark Node as deleted
-        public void SoftDelete(int data)
+        public void DeletarSuave(int data)
         {
             //find node then set property isdeleted to true
             Node toDelete = Buscar(data);
